@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!-- inicio de formas -->
+	<!-- El método get solicita recursos de sólo lectura -->
+	<!-- El método post hace una petición de escritura-->
+	<!-- El método patch hace una petición de modificación -->
+	<!-- El método delete hace una petición de eliminación -->
+	<form action="/registro" method="post">
+		<div class="field" id="name-container">
+			<label for="Nombre">Nombre</label> <br>
+			<input type="text" name="Nombre" id="Nombre"placeholder="Nombre" autofocus required>
+		</div>
+
+		<div class="field">
+			<label for="Apellido">Apellido</label> <br>
+			<input type="text" name="Nombre" id="Apellido" placeholder="Apellido" required>
+		</div>
+
+		<div class="field">
+			<label for="Email">E-mail</label> <br>
+			<input type="text" name="Email" id="Email" placeholder="nombre@correo.com" required>
+		</div>
+
+		<div class="field">
+			<label for="sexo">Sexo</label> <br>
+			<label for="hombre">Hombre</label>
+			<input type="radio" name="sexo" id="hombre">
+			<label for="mujer">Mujer</label>
+			<input type="radio" name="sexo" id="mujer">
+		</div>
+
+		<div class="field">
+			<select name="estado" id="estado" required>
+				<option value="" disabled selected>Selecciona tu estado</option>
+				<option value="1">Aguascalientes</option>
+				<option value="2">Baja California</option>
+				<option value="3">Baja California Sur</option>
+				<option value="4">Campeche</option>
+				<option value="5">Chiapas</option>
+				<option value="6">Chihuahua</option>
+				<option value="7">Coahuila</option>
+				<option value="8">Colima</option>
+				<option value="9">Durango</option>
+				<option value="10">Guanajuato</option>
+				<option value="11">Guerrero</option>
+				<option value="12">Hidalgo</option>
+				<option value="13">Jalisco</option>
+				<option value="14">Ciudad de México</option>
+				<option value="15">Michoacán</option>
+				<option value="16">Morelos</option>
+				<option value="17">Nayarit</option>
+				<option value="18">Oaxaca</option>
+				<option value="19">Puebla</option>
+				<option value="20">Querétaro</option>
+				<option value="21">Sinaloa</option>
+				<option value="22">Sonora</option>
+				<option value="23">Tabasco</option>
+				<option value="24">Tamaulipas</option>
+				<option value="25">Tlaxcala</option>
+				<option value="26">Veracruz</option>
+
+			</select>	
+		</div>
+
+		<div class="field">
+			<label for="Password">Password</label>
+			<input type="Password" name="Password" id="Password" placeholder="Constraseña">
+		</div>
+		
+		<div class="field">
+			<label for="Mensaje">¿Por qué te estás registrando?</label> <br>
+			<textarea name="Mensaje" id="Mensaje" cols="30" rows="5" placeholder="Escribe tu mensaje"></textarea>
+		</div>
+
+		<div class="field">
+			<input type="Checkbox" name="terminos" id="terminos">
+			<label for="terminos">Acepto los <a href="/terminos" target="_blank" title="términos y condiciones">términos y condiciones</a></label>
+		</div>
+
+		<div class="field">
+			<!--<button>Enviar</button> otra forma de CTA-->
+			<button type="submit">Enviar</button>
+		</div>
+		
+
+
+	</form>	
+</body>
+</html>
+
+
+
+
+
+
+

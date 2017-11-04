@@ -1,0 +1,116 @@
+body{
+	background: #F2EDE4;
+}
+
+a {
+	color: #000;
+}
+label {
+	background-color: white;
+}
+
+a:hover{
+	color: blue;
+} 
+
+a:active{
+	color: red;
+}
+
+a[href="#"] {
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+	background-color: white;
+	color: white;
+}
+
+input:focus {
+	background-color: black;	
+}
+
+input:valid {
+	background-color: green;
+}
+
+input:invalid {
+	background-color: red;
+}
+
+input[type="checkbox"]:checked ~ label {
+	color: green;
+}
+input[type="submit"] {
+	background-color: white;
+}
+
+#name-container > label {
+	background-color: green;
+}
+
+#name-container > label:first-child {
+	background-color: purple;
+	color: #fff;
+}
+
+form {
+	width: 60%;
+	max-width: 600px;
+	min-width: 300px;
+	margin: 0 auto;
+}
+textarea,
+select,
+input {
+	width: 100%;
+	background-color: #D9D1C7;
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 8px;
+	border: 1px solid #8C8681;
+}
+
+textarea {
+	resize: none;
+}
+
+input[type="radio"] 
+input[type="checkbox"] {
+	width: auto;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	width: auto;
+	display: inline-block;
+}
+
+label {
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	display: block;
+}
+
+.field {
+	width: 100%;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
