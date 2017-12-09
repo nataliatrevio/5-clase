@@ -1,20 +1,65 @@
+*{
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body{
-	background: #F2EDE4;
+	margin: 0;
+	padding: 0;
+	background-color: #F2FFE3;
+	font-family: helvetica;
+
 }
 
 a {
-	color: #000;
+	text-decoration: none;
+	color: #1B4869;
 }
+
+
+ul {
+	list-style-type: none;
+}
+
+section {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	padding: 10%;
+}
+
+form {
+	background-color: #F2FFE3;
+	height: auto;
+	padding: 1.5rem;
+	box-shadow: 0 1px 2px 0px rgba (0,0,0,0.5)
+
+}
+
+textarea {
+	max-height: 100px;
+	resize: none;
+}
+
 label {
-	background-color: white;
+	color: black;
+	background: #F2FFE3;
+
 }
 
 a:hover{
-	color: blue;
+	color: black;
 } 
 
 a:active{
-	color: red;
+	color: black;
 }
 
 a[href="#"] {
@@ -23,37 +68,45 @@ a[href="#"] {
 
 input[type="text"],
 input[type="email"],
-input[type="password"]{
+input[type="password"]
+
+{
+	width: 95%
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #56B9D0
 	background-color: white;
 	color: white;
 }
 
 input:focus {
-	background-color: black;	
+	background-color: white;	
 }
 
 input:valid {
-	background-color: green;
-}
-
-input:invalid {
-	background-color: red;
-}
-
-input[type="checkbox"]:checked ~ label {
-	color: green;
-}
-input[type="submit"] {
 	background-color: white;
 }
 
-#name-container > label {
-	background-color: green;
+input:invalid {
+	background-color: white;
 }
 
+input[type="checkbox"]:checked ~ label {
+	color: white;
+}
+input[type="submit"] {
+	background-color: white;
+	border: none;
+	padding: 5px
+	width: 100%;
+
+}
+
+}
 #name-container > label:first-child {
-	background-color: purple;
-	color: #fff;
+	background-color: ##F2FFE3;
+	color: black;
 }
 
 form {
@@ -74,10 +127,6 @@ input {
 	border: 1px solid #8C8681;
 }
 
-textarea {
-	resize: none;
-}
-
 input[type="radio"] 
 input[type="checkbox"] {
 	width: auto;
@@ -86,7 +135,7 @@ input[type="checkbox"] {
 input[type="radio"] + label,
 input[type="checkbox"] + label {
 	width: auto;
-	display: inline-block;
+	display: inline-flex;
 }
 
 label {
@@ -99,10 +148,3 @@ label {
 .field {
 	width: 100%;
 }
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
